@@ -1,0 +1,53 @@
+/* Google-specific styles */
+body {
+  font-family: arial, sans-serif;
+}
+
+/* Custom search input styles */
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
+}
+
+/* Animation for search results loading */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.search-result {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Smooth transitions */
+.hover-shadow {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
+}
+
+/* Google logo hover effect */
+.google-logo:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
